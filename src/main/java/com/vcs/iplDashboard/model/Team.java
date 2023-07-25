@@ -1,12 +1,11 @@
 package com.vcs.iplDashboard.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
+
+import java.util.List;
 
 @RequiredArgsConstructor
 @Entity
@@ -19,6 +18,9 @@ public class Team {
 	private String teamName;
 	private long totalMatches;
 	private long totalWins;
+
+	@Transient
+	private List<Match> matches;
 	
 	public Team(String teamName, long totalMatches) {
 		this.teamName = teamName;
