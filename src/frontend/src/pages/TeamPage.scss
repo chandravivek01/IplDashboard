@@ -18,9 +18,17 @@
 
     .win-loss-section {
         justify-self: center;
+        padding: 40px;
+        text-align: center;
     }
 
     .match-detail-section {
         grid-column: span 4;
+    }
+
+    .more-link {
+        align-self: center;
+        justify-self: center;
+        font-size: 1.5rem;
     }
 }

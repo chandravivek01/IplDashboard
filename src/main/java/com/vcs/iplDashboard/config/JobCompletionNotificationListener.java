@@ -38,6 +38,7 @@ public class JobCompletionNotificationListener extends JobExecutionListenerSuppo
 		if (jobExecution.getStatus() == BatchStatus.COMPLETED) {
 			log.info("!!! JOB FINISHED! Time to verify the results");
 
+			// spring jdbc = persistence
 //      System.out.println();
 //      jdbcTemplate.query("SELECT date, team1, team2 FROM match",
 //        (rs, row) -> {

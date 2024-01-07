@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 public class MatchInput {
-	
+
 	private String id;
 	private String city;
 	private String date;
